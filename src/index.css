@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-next {
-  color: red;
-  background-color: blue;
-  right: 0px;
-}
-
-.slick-prev {
-  color: green;
-  background-color: yellow;
-  left: 0px;
-  z-index: 2;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

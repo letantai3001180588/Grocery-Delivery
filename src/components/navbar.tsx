@@ -164,8 +164,8 @@ export default function Navbar(props: Props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" position="fixed">
-                <Toolbar className='w-[100%] flex flex-row justify-between bg-white text-black'>
+            <AppBar component="nav" position="fixed" color='default'>
+                <Toolbar className='w-[80%] mx-auto flex flex-row justify-between text-black'>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
