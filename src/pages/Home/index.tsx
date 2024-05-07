@@ -150,13 +150,11 @@ export default function Home() {
                             </h2>
                             <p className="text-sm font-[400] m-5 mt-1">Best collection in 2024 for you!</p>
                             <p className="text-sm font-[400] m-5 mt-1">&emsp;</p>
-                            <div className="mt-5 ml-5">
+                            <div className="h-[3000px] mt-5 ml-5">
                                 <Grid container spacing={3} columns={{ xs: 4, sm: 9, md: 12 }}>
                                     {Array.from(Array(12)).map((_, index) =>
                                         <Grid xs={2} sm={3} md={3}>
                                             <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="product" />
-                                            {/* <Item>xs=2</Item> */}
-
                                         </Grid>
                                     )}
                                 </Grid>
