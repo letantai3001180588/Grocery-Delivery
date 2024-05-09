@@ -10,13 +10,13 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Client</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
-                                <a href="" className="hover:underline">Flowbite</a>
+                                <a href="" className="hover:underline">Care</a>
                             </li>
                             <li>
-                                <a href="" className="hover:underline">Tailwind CSS</a>
+                                <a href="" className="hover:underline">Payment</a>
                             </li>
                         </ul>
                     </div>
