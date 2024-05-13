@@ -2093,6 +2093,18 @@
     "@svgr/plugin-svgo" "^5.5.0"
     "loader-utils" "^2.0.0"
 
+"@tanstack/query-core@5.36.0":
+  "integrity" "sha512-B5BD3pg/mztDR36i77hGcyySKKeYrbM5mnogOROTBi1SUml5ByRK7PGUUl16vvubvQC+mSnqziFG/VIy/DE3FQ=="
+  "resolved" "https://registry.npmjs.org/@tanstack/query-core/-/query-core-5.36.0.tgz"
+  "version" "5.36.0"
+
+"@tanstack/react-query@^5.36.0":
+  "integrity" "sha512-BATvtM0rohwg7pRHUnxgeDiwLWRGZ8OM/4y8LImHVpecQWoH6Uhytu3Z8YV6V7hQ1sMQBFcUrGE1/e4MxR6YiA=="
+  "resolved" "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.36.0.tgz"
+  "version" "5.36.0"
+  dependencies:
+    "@tanstack/query-core" "5.36.0"
+
 "@testing-library/dom@^8.5.0", "@testing-library/dom@>=7.21.4":
   "integrity" "sha512-/DiOQ5xBxgdYRC8LNk7U+RWat0S3qRLeIw3ZIkMQ9kkVlRmwD/Eg8k8CqIpD6GW7u20JIUOfMKbxtiLutpjQ4g=="
   "resolved" "https://registry.npmjs.org/@testing-library/dom/-/dom-8.20.1.tgz"
