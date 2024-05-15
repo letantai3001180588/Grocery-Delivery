@@ -1,3 +1,3 @@
 export default function DetailProduct() {
-    return <></>
+    return <>Detail Product</>
 }
