@@ -1,3 +1,8 @@
+import Navbar from "components/navbar";
+
 export default function DetailProduct() {
-    return <>Detail Product</>
+    return <>
+        <Navbar />
+        Detail Product
+    </>
 }
