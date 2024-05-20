@@ -11,7 +11,8 @@ import Slider from 'react-slick'
 import { NextIcon, PrevIcon } from "utils/icon";
 import Product from "components/product";
 import Footer from "components/footer";
-
+import { useState } from "react";
+import { Box, Button, Modal, Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -86,7 +87,25 @@ const settings = {
     nextArrow: <SampleNextArrow />,
 };
 
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
+
 export default function Home() {
+
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     return (
         <div>
             <Navbar />
@@ -122,7 +141,7 @@ export default function Home() {
                                 <div className="w-[100%] h-[420px]">
                                     <Slider {...settings} className="w-[100%] h-[420px]">
                                         {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item: number) =>
-                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="" />
+                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="" handleOpen={handleOpen} />
                                         )}
                                     </Slider>
                                 </div>
@@ -138,7 +157,7 @@ export default function Home() {
                                 <div className="w-[100%] h-[420px]">
                                     <Slider {...settings} className="w-[100%] h-[420px]">
                                         {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item: number) =>
-                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="a" />
+                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="a" handleOpen={handleOpen} />
                                         )}
                                     </Slider>
                                 </div>
@@ -155,7 +174,7 @@ export default function Home() {
                                 <Grid container spacing={3} columns={{ xs: 4, sm: 9, md: 12 }}>
                                     {Array.from(Array(12)).map((_, index) =>
                                         <Grid xs={2} sm={3} md={3}>
-                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="product" />
+                                            <Product img="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=640&q=75" name="product" handleOpen={handleOpen} />
                                         </Grid>
                                     )}
                                 </Grid>
@@ -166,6 +185,25 @@ export default function Home() {
                     </div>
                 </div >
             </div>
+
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+                <Box sx={style}>
+                    <Typography id="modal-title" variant="h6" component="h2">
+                        Modal Title
+                    </Typography>
+                    <Typography id="modal-description" sx={{ mt: 2 }}>
+                        This is a simple modal example using Material-UI.
+                    </Typography>
+                    <Button onClick={handleClose} variant="contained" color="secondary" sx={{ mt: 2 }}>
+                        Close
+                    </Button>
+                </Box>
+            </Modal>
         </div >
     );
 }

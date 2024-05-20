@@ -1,7 +1,7 @@
 import { Button, Rating } from "@mui/material";
 import { AddCartIcon } from "utils/icon";
 
-export default function Product({ img, name }:{ img: string, name: string }) {
+export default function Product({ img, name, handleOpen }: { img: string, name: string, handleOpen: any }) {
     return <>
         <div className="h-[420px]">
             <div className="w-[100%] h-[100%] flex justify-center p-1">
@@ -21,7 +21,7 @@ export default function Product({ img, name }:{ img: string, name: string }) {
                             </p>
                         </div>
                         <div className="flex items-end">
-                            <Button variant="text" color="error" className="rounded-[50%] fill-[#D23F57]">
+                            <Button variant="text" color="error" className="rounded-[50%] fill-[#D23F57]" onClick={handleOpen}>
                                 <AddCartIcon />
                             </Button>
                         </div>
