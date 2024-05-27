@@ -4,7 +4,7 @@ import Navbar from "components/navbar";
 export default function DetailProduct() {
     return <>
         <Navbar />
-        Detail Product 2
+        Detail Product 3
         <Footer />
     </>
 }
