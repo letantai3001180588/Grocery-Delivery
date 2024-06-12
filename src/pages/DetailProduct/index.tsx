@@ -5,6 +5,7 @@ export default function DetailProduct() {
     return <>
         <Navbar />
         <div>Detail Product</div>
+        <div>Description:</div>
         <Footer />
     </>
 }
