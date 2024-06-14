@@ -7,6 +7,7 @@ export default function DetailProduct() {
         <div>Detail Product</div>
         <div>Description:</div>
         <div>Price:</div>
+        <div>Cateagory:</div>
         <Footer />
     </>
 }
