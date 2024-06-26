@@ -4,8 +4,8 @@ import Navbar from "components/navbar";
 export default function DetailProduct() {
     return <>
         <Navbar />
-            <div>Detail Product</div>
             <div>Image:</div>
+            <div>Product 01</div>
             <div>Description:</div>
             <div>Price:</div>
             <div>Cateagory:</div>
