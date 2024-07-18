@@ -5,7 +5,7 @@ export default function DetailProduct() {
     return <>
         <Navbar />
             <div>Image:</div>
-            <div>Product 19</div>
+            <div>Product 20</div>
             <div>Description:</div>
             <div>Price:</div>
             <div>Cateagory:</div>
